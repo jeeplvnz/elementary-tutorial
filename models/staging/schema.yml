@@ -27,3 +27,10 @@ models:
     columns:
       - name: signup_id
       - name: customer_email
+        tests:
+          - not_null:
+              name: Non_nullness check on model stg_signups column CUSTOMER_EMAIL
+              alias: non_nullness_check__on__model__stg_signups__column__CUSTOMER_EMAIL
+              tags:
+                - non_nullness_check
+                - test_on_single_resource
