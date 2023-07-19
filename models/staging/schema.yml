@@ -13,6 +13,10 @@ models:
     columns:
       - name: order_id
       - name: status
+        tests:
+          - accepted_values:
+              values: ['placed', 'returned', 'completed', 'shipped']
+              severity: warn
 
   - name: stg_payments
     config:
