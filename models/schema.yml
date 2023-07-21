@@ -16,6 +16,10 @@ models:
             - uniqueness_check
             - test_on_single_resource
             - custom_test
+          meta:
+            owner: Albert Wang
+            quality_dimension: uniqueness
+            failed_row_count_calc: count(*)
           combination_of_columns:
             - customer_id
       
